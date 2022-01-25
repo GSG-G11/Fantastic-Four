@@ -1,35 +1,132 @@
+:root {
+  --main-color: #2aca8e;
+  --main-margin: 70px;
+}
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-	padding-inline: 15px;
-	margin-inline: auto;
+  padding-inline: 15px;
+  margin-inline: auto;
 }
 
 @media (min-width: 567px) {
-	.container {
-		width: 550px;
-	}
+  .container {
+    width: 550px;
+  }
 }
 
 @media (min-width: 768px) {
-	.container {
-		width: 750px;
-	}
+  .container {
+    width: 750px;
+  }
 }
 
 @media (min-width: 992px) {
-	.container {
-		width: 950px;
-	}
+  .container {
+    width: 950px;
+  }
 }
 
 @media (min-width: 1200px) {
-	.container {
-		width: 1150px;
-	}
+  .container {
+    width: 1150px;
+  }
+}
+
+/* Team Members Section
+*************************/
+.team-members-section {
+  background-color: #eee;
+  padding-block: 4em;
+  text-align: center;
+  margin-top: var(--main-margin);
+}
+.team-members-header {
+  color: #090909;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-size: 2rem;
+}
+.team-members-section .team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 9px 0px grey;
+  flex: 1;
+  margin: 1em;
+  padding-block: 2em;
+  padding-inline: 0.5em;
+
+  border-radius: 10px;
+}
+
+.team-member-card figure {
+  margin: 0.4em;
+}
+
+.team-member-card .profile-pic {
+  max-width: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.team-member-card .profile-pic:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.team-member-card figure figcaption {
+  margin-block: 1em;
+  color: #090909;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.team-member-card .about-text {
+}
+
+.team-member-card .about-text p {
+  color: #575656;
+}
+
+.about-text .team-member-role {
+  color: #090909;
+  letter-spacing: 2.5px;
+  display: inline-block;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.team-member-card .social-media-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.team-member-card .social-media-icons img {
+  transition: transform 0.3s;
+  width: 25px;
+}
+.team-member-card .social-media-icons i {
+  font-size: 25px;
+  transition: transform 0.3s;
+}
+
+.team-member-card .social-media-icons :is(img:hover, i:hover) {
+  transform: scale(1.2);
 }
