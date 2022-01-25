@@ -1,3 +1,4 @@
+/* Global Rules */
 :root {
   --main-color: #2aca8e;
   --main-margin: 70px;
@@ -130,3 +131,101 @@
 .team-member-card .social-media-icons :is(img:hover, i:hover) {
   transform: scale(1.2);
 }
+/* Global Rules */
+
+/* What you get */
+.special-section-heading {
+  font-size: 3.5rem;
+  color: #4a4a4a;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 0.95em;
+}
+.what-you-get .columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-inline: -15px;
+}
+
+.what-you-get .columns > * {
+  width: calc((100% / 2) - calc(15px * 4));
+  margin-inline: 15px;
+}
+
+@media (max-width: 768px) {
+  .special-section-heading {
+    font-size: 2.5rem;
+  }
+  .what-you-get .columns .txt .services li {
+    font-size: 1.3rem;
+  }
+  .what-you-get .columns {
+    display: block;
+    margin-inline: 0;
+  }
+
+  .what-you-get .columns > * {
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+
+.what-you-get .columns .txt .services {
+  display: flex;
+  margin-inline: -15px;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.what-you-get .columns .txt .services li {
+  font-size: 1.4rem;
+  margin-inline: 15px;
+  color: #686868;
+  font-weight: 300;
+}
+
+.what-you-get .columns .txt .services li.active {
+  color: black;
+  font-weight: 500;
+  position: relative;
+}
+
+.what-you-get .columns .txt .services li.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #2aca8e;
+  left: 0;
+  bottom: -2px;
+}
+
+.what-you-get .columns .txt .left-section-txt {
+  margin-top: 3.5rem;
+}
+
+.what-you-get .columns .txt .left-section-txt .pairs {
+  margin-bottom: 2rem;
+}
+
+.what-you-get .columns .txt .left-section-txt .pairs .sub-heading {
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.what-you-get .columns .txt .left-section-txt .pairs .description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.what-you-get .columns .image img {
+  width: 100%;
+  object-fit: cor;
+  object-fit: cover;
+}
+
+/* What you get */
