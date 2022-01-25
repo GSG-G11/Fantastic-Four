@@ -1,14 +1,23 @@
-# Fantastic Four
+# Fantastic Four 😊
+- [Links](#demo)
+- [Purpose](#purpose)
+- [User Stories](#user-stories)
+- [User Journey](#user-journey)
+- [Prototype](#prototype)
+- [Clone It](#clone-it)
+- [Tech Stack](#tech-stack)
+- [Team Members](#team-members)
+
+## Links :tv: 
+- [Live Demo](https://GSG-G11.github.io/Fantastic-Four) <span id="demo"></span>
+- [Figma Design](https://www.figma.com/file/OrYYJVgdRGlRB4qd8m5D39/Fantastic-Four?node-id=0%3A1)
+
+## Purpose :pencil: <span id="purpose"></span>
+Build a website that views the services that the `Fantastic Four` team offer, and make the ability for recruiters to hire the team to build websites.
 
 
-## Live demo :tv:  [link](https://GSG-G11.github.io/Fantastic-Four)
 
-## Purpose :pencil: 
-A Website that client can use to hire developers.
-
-
----------------
-## User Story  :books: 
+## User Stories :books: <span id="user-stories"></span> 
 
 ### As a client looking to hire a team of developers:
 - I want to visit your site and immediately see a headline about your team so that I get a concise description of what you have to offer me.
@@ -23,19 +32,35 @@ A Website that client can use to hire developers.
 ### As a blind client:
 - I would like to easily understand how to navigate the site after my screen reader reads me the content of the site so I can understand the information available.
 
-## User journey  :open_book:
+## User journey 🛸 <span id="user-journey"></span>
+- When opening th `Fantastic Four` website, you'll be faced with a heading section containing the navigation links for the rest of the sections on the page, and a welcoming message alongside a button for navigating to team members directly.
+- In the next section `What you get`, you'll be able to know what services does the `Fantastic Four` team offers.
+- Keep scrolling until reaching the `Our Team` section, in this section you're going to get to know our **Fantastic** team members seperitly with each profiles.
+- After that you'll see what preives clients say about our service.
+- Then you can choose a plan to start dealing with the **Fantastic Four** team.
+- And last but not least, you can fill up your contact information alongside your message for the **Fantastic Four** team.
 
+## Prototype 🤖 <span id="prototype"></span>
+<div align="center">
+  <img width="800" src="https://i.imgur.com/qajWJ06.jpg" />
+</div>
 
------
-## Prototype
+ 
 
-----------------------
-## Tech Stack : :clipboard:  
+## Clone It 🖨 <span id="clone-it"></span>
+```bash=
+git clone https://github.com/GSG-G11/Fantastic-Four.git
+cd ./Fantastic-Four
+code .
+```
+
+## Tech Stack :clipboard: <span id="tech-stack"></span>
 - HTML
 - CSS
 - Figma
-------------------
-## Team Members :busts_in_silhouette:
+
+
+## Team Members :busts_in_silhouette: <span id="team-members"></span>
 - [Zaher J. Abuamro](https://github.com/zaher-aa)
 - [Amjad Yahya Hassan](https://github.com/amjed-98)
 - [Farah Shaqquora](https://github.com/farah2003)
