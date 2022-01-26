@@ -573,3 +573,22 @@
 html{
   scroll-behavior: smooth;
 }
+#footer{
+  background-color: #535353;
+  height: 20vh;
+  text-align: center;
+  padding-top: 4vh;
+}
+.title{
+  font-size: 20px;
+  font-weight:600;
+  color:#2aca8e;
+}
+.dec{
+  font-size: 20px;
+  color:#FFFFFF;
+  
+}
+.endText{
+  font-size: 12px;
+}
