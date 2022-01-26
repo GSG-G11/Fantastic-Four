@@ -10,38 +10,32 @@
 	padding-inline: 15px;
 	margin-inline: auto;
 }
-.what-people-say-container{
+.what-people-say-container {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
 	color: white;
-	/* border: 1px solid red; */
 }
-.left img{
+.left img {
 	width: 100%;
 	height: 100%;
-
 }
-.right{
-	background-color: #4A4A4A;
+.right {
+	background-color: #4a4a4a;
 	height: 100%;
 	position: relative;
-	/* border: 1px red solid; */
-
 }
 
-.right h1{
-	/* margin-left: 170px; */
+.right h1 {
 	display: flex;
 	justify-content: center;
 	font-size: 30px;
-	font-weight:500;
-	color: #2ACA8E;
+	font-weight: 500;
+	color: #2aca8e;
 	margin-top: 20px;
-	
 }
 
-.paragraphs{
+.paragraphs {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -49,40 +43,32 @@
 	margin-left: 50px;
 	margin-top: 50px;
 	padding-right: 30px;
-	
-		/* border: 1px red solid;  */
 }
 
-
-
-.thankfulPerson{
+.thankfulPerson {
 	display: flex;
 	align-items: center;
-	/* border: 1px red solid;  */
 	padding-left: 30px;
 	position: absolute;
 	bottom: 0;
-	
 }
 
-.thankfulPerson h6{
+.thankfulPerson h6 {
 	margin-left: 20px;
 }
 
-.thankfulPerson img{
+.thankfulPerson img {
 	width: 50px;
 }
-
 
 @media (min-width: 567px) {
 	.container {
 		width: 550px;
 	}
 
-	 .paragraphs{
-		height: 60%;	
+	.paragraphs {
+		height: 60%;
 	}
-	
 }
 
 @media (min-width: 768px) {
@@ -95,8 +81,8 @@
 	.container {
 		width: 950px;
 	}
-	.paragraphs{
-		height: 40%;	
+	.paragraphs {
+		height: 40%;
 	}
 }
 
