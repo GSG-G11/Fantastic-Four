@@ -119,9 +119,8 @@
   font-size: 2rem;
 }
 .team-members-section .team-members {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   margin-top: 3em;
 }
 
