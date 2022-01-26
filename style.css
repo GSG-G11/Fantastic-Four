@@ -1,205 +1,293 @@
 /* Global Rules */
+:root {
+  --main-color: #2aca8e;
+  --main-margin: 70px;
+}
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
-	padding-inline: 15px;
-	margin-inline: auto;
+  padding-inline: 15px;
+  margin-inline: auto;
 }
-.what-people-say-container{
-	display: flex;
-	width: 100vw;
-	height: 100vh;
-	color: white;
-	/* border: 1px solid red; */
+.what-people-say-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  /* border: 1px solid red; */
 }
-.left img{
-	width: 100%;
-	height: 100%;
-
+.left img {
+  width: 100%;
+  height: 100%;
 }
-.right{
-	background-color: #4A4A4A;
-	height: 100%;
-	position: relative;
-	/* border: 1px red solid; */
-
+.right {
+  background-color: #4a4a4a;
+  height: 100%;
+  position: relative;
+  /* border: 1px red solid; */
 }
 
-.right h1{
-	/* margin-left: 170px; */
-	display: flex;
-	justify-content: center;
-	font-size: 30px;
-	font-weight:500;
-	color: #2ACA8E;
-	margin-top: 20px;
-	
+.right h1 {
+  /* margin-left: 170px; */
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #2aca8e;
+  margin-top: 20px;
 }
 
-.paragraphs{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 30%;
-	margin-left: 50px;
-	margin-top: 50px;
-	padding-right: 30px;
-	
-		/* border: 1px red solid;  */
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-right: 30px;
+
+  /* border: 1px red solid;  */
 }
 
-
-
-.thankfulPerson{
-	display: flex;
-	align-items: center;
-	/* border: 1px red solid;  */
-	padding-left: 30px;
-	position: absolute;
-	bottom: 0;
-	
+.thankfulPerson {
+  display: flex;
+  align-items: center;
+  /* border: 1px red solid;  */
+  padding-left: 30px;
+  position: absolute;
+  bottom: 0;
 }
 
-.thankfulPerson h6{
-	margin-left: 20px;
+.thankfulPerson h6 {
+  margin-left: 20px;
 }
 
-.thankfulPerson img{
-	width: 50px;
+.thankfulPerson img {
+  width: 50px;
 }
-
 
 @media (min-width: 567px) {
-	.container {
-		width: 550px;
-	}
+  .container {
+    width: 550px;
+  }
 
-	 .paragraphs{
-		height: 60%;	
-	}
-	
+  .paragraphs {
+    height: 60%;
+  }
 }
 
 @media (min-width: 768px) {
-	.container {
-		width: 750px;
-	}
+  .container {
+    width: 750px;
+  }
 }
 
 @media (min-width: 992px) {
-	.container {
-		width: 950px;
-	}
-	.paragraphs{
-		height: 40%;	
-	}
+  .container {
+    width: 950px;
+  }
+  .paragraphs {
+    height: 40%;
+  }
 }
 
 @media (min-width: 1200px) {
-	.container {
-		width: 1150px;
-	}
+  .container {
+    width: 1150px;
+  }
+}
+
+/* Team Members Section
+*************************/
+.team-members-section {
+  background-color: #eee;
+  padding-block: 4em;
+  text-align: center;
+  margin-top: var(--main-margin);
+}
+.team-members-header {
+  color: #090909;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+  font-weight: normal;
+  font-size: 2rem;
+}
+.team-members-section .team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 3em;
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 9px 0px grey;
+  flex: 1;
+  margin: 1em;
+  padding-block: 2em;
+  padding-inline: 0.5em;
+
+  border-radius: 10px;
+}
+
+.team-member-card figure {
+  margin: 0.4em;
+}
+
+.team-member-card .profile-pic {
+  max-width: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.team-member-card .profile-pic:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.team-member-card figure figcaption {
+  margin-block: 1em;
+  color: #090909;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.team-member-card .about-text {
+}
+
+.team-member-card .about-text p {
+  color: #575656;
+}
+
+.about-text .team-member-role {
+  color: #090909;
+  letter-spacing: 2.5px;
+  display: inline-block;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.team-member-card .social-media-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.team-member-card .social-media-icons img {
+  transition: transform 0.3s;
+  width: 25px;
+}
+.team-member-card .social-media-icons i {
+  font-size: 25px;
+  transition: transform 0.3s;
+}
+
+.team-member-card .social-media-icons :is(img:hover, i:hover) {
+  transform: scale(1.2);
 }
 /* Global Rules */
 
 /* What you get */
 .special-section-heading {
-	font-size: 3.5rem;
-	color: #4a4a4a;
-	font-weight: 300;
-	margin-bottom: 1rem;
-	margin-top: 0.95em;
+  font-size: 3.5rem;
+  color: #4a4a4a;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  margin-top: 0.95em;
 }
 .what-you-get .columns {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin-inline: -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-inline: -15px;
 }
 
 .what-you-get .columns > * {
-	width: calc((100% / 2) - calc(15px * 4));
-	margin-inline: 15px;
+  width: calc((100% / 2) - calc(15px * 4));
+  margin-inline: 15px;
 }
 
 @media (max-width: 768px) {
-	.special-section-heading {
-		font-size: 2.5rem;
-	}
-	.what-you-get .columns .txt .services li {
-		font-size: 1.3rem;
-	}
-	.what-you-get .columns {
-		display: block;
-		margin-inline: 0;
-	}
+  .special-section-heading {
+    font-size: 2.5rem;
+  }
+  .what-you-get .columns .txt .services li {
+    font-size: 1.3rem;
+  }
+  .what-you-get .columns {
+    display: block;
+    margin-inline: 0;
+  }
 
-	.what-you-get .columns > * {
-		width: 100%;
-		margin-inline: 0;
-	}
+  .what-you-get .columns > * {
+    width: 100%;
+    margin-inline: 0;
+  }
 }
 
 .what-you-get .columns .txt .services {
-	display: flex;
-	margin-inline: -15px;
-	list-style: none;
-	align-items: center;
-	margin-bottom: 30px;
+  display: flex;
+  margin-inline: -15px;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .what-you-get .columns .txt .services li {
-	font-size: 1.4rem;
-	margin-inline: 15px;
-	color: #686868;
-	font-weight: 300;
+  font-size: 1.4rem;
+  margin-inline: 15px;
+  color: #686868;
+  font-weight: 300;
 }
 
 .what-you-get .columns .txt .services li.active {
-	color: black;
-	font-weight: 500;
-	position: relative;
+  color: black;
+  font-weight: 500;
+  position: relative;
 }
 
 .what-you-get .columns .txt .services li.active::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background: #2aca8e;
-	left: 0;
-	bottom: -2px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #2aca8e;
+  left: 0;
+  bottom: -2px;
 }
 
 .what-you-get .columns .txt .left-section-txt {
-	margin-top: 3.5rem;
+  margin-top: 3.5rem;
 }
 
 .what-you-get .columns .txt .left-section-txt .pairs {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .what-you-get .columns .txt .left-section-txt .pairs .sub-heading {
-	font-weight: 400;
-	font-size: 1.75rem;
-	margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1.75rem;
+  margin-bottom: 10px;
 }
 
 .what-you-get .columns .txt .left-section-txt .pairs .description {
-	font-size: 1.1rem;
-	line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
 .what-you-get .columns .image img {
-	width: 100%;
-	object-fit: cor;
-	object-fit: cover;
+  width: 100%;
+  object-fit: cor;
+  object-fit: cover;
 }
 
 /* What you get */
