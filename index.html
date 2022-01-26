@@ -25,5 +25,56 @@
 		<link rel="stylesheet" href="./style.css" />
 		<title>Fantastic Four</title>
 	</head>
-	<body></body>
+	<body>
+		<section id="header">
+			<div id="navbar">
+			<div>
+			<p id="logo"> Fantastic Four</p>
+
+			</div>
+				
+		<div id="sideNav">
+			<ul>
+				<li class="listelement"><a href="">Home</a></li>
+				<li class="listelement"><a href="">About us</a></li>
+				<li class="listelement"><a href="">Contact us</a></li>
+			</ul>
+		</div>
+			<div id="menuBtn">
+				<img src="images/menu.png" alt ="img" id="menu">
+			</div>
+	</div>
+		<section>
+		<div class="header-container">
+			<p id="description">Hello, We’re<span id="changeColor"> Fantastic Four </span></p>
+			<p id="description">full-stack web developer team.</p>
+			
+
+			<nav class="btn">
+				<a href="#teams">Know more about us</a>
+			</nav>
+		
+		
+		</div>
+		<script >
+			var menuBtn=document.getElementById("menuBtn");
+			var sideNav=document.getElementById("sideNav");
+			var menu=document.getElementById("menu");
+			sideNav.style.right="-100%";
+			menuBtn.onclick=function () {
+				
+				if((sideNav.style.right=="-100%")){
+				
+					sideNav.style.right="5%";
+					menu.src="images/close.png";
+					
+				}
+				else{
+					sideNav.style.right="-100%";
+					menu.src="images/menu.png";
+	
+				}
+			}
+		</script>
+	</body>
 </html>
