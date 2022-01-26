@@ -291,3 +291,112 @@
 }
 
 /* What you get */
+
+/* Plans */
+.plans {
+  margin-bottom: 70px;
+}
+.plans .special-section-heading {
+  text-align: center;
+}
+
+.plans-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.plans-container .plan {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  width: calc(100% / 3);
+}
+
+@media (max-width: 992px) {
+  .plans-container .plan {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .plans-container .plan {
+    width: 100%;
+  }
+}
+
+.plans-container .plan h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: #535353;
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.plans-container .plan .features {
+  list-style: none;
+}
+
+.plans-container .plan .features li {
+  font-size: 1.15rem;
+  margin-bottom: 7px;
+}
+
+.plans-container .plan .plans-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-top: 1px solid #dbdbdb;
+  padding-top: 20px;
+}
+
+.plans-container .plan .plans-footer .price {
+  font-size: 1.15rem;
+}
+
+.plans-container .plan .plans-footer .register {
+  display: block;
+  background: #2aca8e;
+  padding: 10px;
+  border-radius: 100vh;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.plans-container .plan .plans-footer .register::before {
+  position: absolute;
+  content: '';
+  width: 0.5px;
+  height: 0.5px;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.plans-container .plan:first-of-type .plans-footer .register::before {
+  top: 0;
+  left: 0;
+}
+
+.plans-container .plan:nth-of-type(2) .plans-footer .register::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plans-container .plan .plans-footer .register:hover::before {
+  box-shadow: 0 0 0 150px rgb(3, 165, 240);
+}
+
+/* Plans */
