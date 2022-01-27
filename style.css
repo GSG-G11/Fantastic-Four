@@ -413,7 +413,7 @@
 	min-height: 100vh;
 }
 #navbar {
-	padding: 2vh;
+	padding: 5vh;
 	display: flex;
 	justify-content: space-between;
 }
@@ -475,7 +475,7 @@
 	align-items: center;
 	position: fixed;
 	right: 4vh;
-	top: 2vh;
+	top: 4vh;
 }
 #menuBtn img {
 	width: 2vh;
@@ -530,9 +530,9 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	#header ul li {
-		margin: 5vh;
+		margin: 2.5vh;
 	}
 }
 
