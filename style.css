@@ -302,6 +302,7 @@
 /* end of what people say page  */
 /* Plans */
 .plans {
+  margin-top: var(--main-margin);
   margin-bottom: 70px;
 }
 .plans .special-section-heading {
@@ -309,29 +310,15 @@
 }
 
 .plans-container {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5em;
 }
 
 .plans-container .plan {
   padding: 20px;
   background-color: white;
   border: 1px solid #e6e6e6;
-  width: calc(100% / 3);
-}
-
-@media (max-width: 992px) {
-  .plans-container .plan {
-    width: calc(100% / 2);
-  }
-}
-
-@media (max-width: 768px) {
-  .plans-container .plan {
-    width: 100%;
-  }
 }
 
 .plans-container .plan h3 {
